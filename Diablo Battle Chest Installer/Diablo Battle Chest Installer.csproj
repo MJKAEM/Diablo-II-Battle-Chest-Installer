@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5097B7B6-4804-4940-B761-18302D1A9FE7}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Diablo_Battle_Chest_Installer</RootNamespace>
+    <AssemblyName>Diablo Battle Chest Installer</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CDMenu.cs" />
+    <Compile Include="CDMounter.cs" />
+    <Compile Include="Diablo2PatchMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Diablo2PatchMenu.Designer.cs">
+      <DependentUpon>Diablo2PatchMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diablo2CDMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Diablo2CDMenu.Designer.cs">
+      <DependentUpon>Diablo2CDMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diablo2ExpCDMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Diablo2ExpCDMenu.Designer.cs">
+      <DependentUpon>Diablo2ExpCDMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiabloCDMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DiabloCDMenu.Designer.cs">
+      <DependentUpon>DiabloCDMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiabloExtrasMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DiabloExtrasMenu.Designer.cs">
+      <DependentUpon>DiabloExtrasMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiabloPatchMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DiabloPatchMenu.Designer.cs">
+      <DependentUpon>DiabloPatchMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global.cs" />
+    <Compile Include="HellfireCDMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HellfireCDMenu.Designer.cs">
+      <DependentUpon>HellfireCDMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstallerButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InstallerWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstallerWindow.Designer.cs">
+      <DependentUpon>InstallerWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatchMenu.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MainMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Diablo2PatchMenu.resx">
+      <DependentUpon>Diablo2PatchMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diablo2CDMenu.resx">
+      <DependentUpon>Diablo2CDMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diablo2ExpCDMenu.resx">
+      <DependentUpon>Diablo2ExpCDMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiabloCDMenu.resx">
+      <DependentUpon>DiabloCDMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiabloExtrasMenu.resx">
+      <DependentUpon>DiabloExtrasMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiabloPatchMenu.resx">
+      <DependentUpon>DiabloPatchMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HellfireCDMenu.resx">
+      <DependentUpon>HellfireCDMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstallerWindow.resx">
+      <DependentUpon>InstallerWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Diablo II Exp.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Diablo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Diablo II.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hellfire.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Diablo_2_cover.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\71LIoQjjmGL._AC_SL1000_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Diablo II Exp Main.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu Click.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mouse Over.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\26865-diablo-ii-lord-of-destruction-macintosh-front-cover.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2244138-diablo_hellfire.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Diablo_1_box.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
